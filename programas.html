@@ -6,8 +6,106 @@
     <title>ONG</title>
 </head>
 <body>
-    <header></header>
-    <main></main>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./programas.html">Programas</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./contactos.html">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="programas">
+            <h1>Nuestros programas</h1>
+            <br>
+            <p>
+                Contamos con programas para incluir a toda la comunidad y ampliar la ayuda a quién lo necesite. Contamos con profesionales y 
+                especialistas en diversas áreas para cumplir con nuestra misión. Entre ellos se listan:
+                <ul>
+                    <li><a href="#programa-manos">Manos llenas</a></li>
+                    <li><a href="#programa-panza">Panza llena</a></li>
+                    <li><a href="#programa-num">Ni uno menos</a></li>
+                </ul>
+                <h3><a href="#inscripcion">¡Forma parte de nuestra organización!</a></h3>
+            </p>
+        </section>
+        <section id="programa-manos">
+            <h2>Programa: Manos llenas</h2>
+            <img src="./img/manos-llenas-stock.png" alt="programa-1">
+            <br>
+            <p>
+                Este programa se encarga de la recepción de donaciones, clasificación, almacenamiento y aprovisionamiento. Para los mismos se capacita a la 
+                comunidad sobre las mejores prácticas en la manipulación y almacenamiento de los distintos elementos. Se registran y supervisan
+                los consumos para garantizar la efectividad y transparencia en nuestras operaciones.
+            </p>
+            <p>
+                Trabajamos con los supermercados, verdulerías y restaurantes locales para generar sinergia y unidad con el sector privado.
+            </p>
+        </section>
+        <section id="programa-panza">
+            <h2>Programa: Panza llena</h2>
+            <img src="./img/panza-llena-stock.png" alt="programa-2">
+            <br>
+            <p>
+                Este programa se encarga de la preparación de alimentos, armado de menús y aprovisionamiento a los comedores para que la gente que necesite
+                puedo acceder a un plato de comida diario. La selección y confección de los mismos se elige de forma inteligente para aprovechar al máximo
+                los ingredientes disponibles, asi no se desperdicie ninguna ayuda.
+            </p>
+        </section>
+        <section id="programa-num">
+            <h2>Programa: Ni uno menos</h2>
+            <img src="./img/ni-uno-menos-stock.png" alt="programa-3">
+            <br>
+            <p>
+                Este programa se encarga de la distribución efectiva e implementación de los distintos programas para que puedan acceder a los mismos personas
+                con discapacidades motrices o que vivan en zonas de dificil acceso. 
+            </p>
+            <p>
+                Contamos con una red logística en constante expansión, transportistas experimentados y nuestro reconocimiento internacional es la prueba.
+            </p>
+        </section>
+        <section id="inscripcion">
+            <h2>¿Cómo participar?</h2>
+            <br>
+            <p>
+                Para participar se deben seguir los siguientes pasos:
+                <ol>
+                    <li>Completar el formulario que esta debajo con los datos requeridos.</li>
+                    <li>Esperar a que se contacten con usted y le confirmen la inscripcion al programa.</li>
+                    <li>En <strong>función de que se requiera</strong> se contactaran con usted para pactar una entrevista personal, debe presentarse a la convocatoria.</li>
+                </ol>
+                <br>
+                <form  id="form-inscripcion" action="/inscribir" method="post">
+                    <label for="nombre">Nombre</label>
+                    <input name="nombre" type="text" id="nombre">
+                    <br>
+                    <label for="apellido">Apellido</label>
+                    <input name="apellido" type="text" id="apellido">
+                    <br>
+                    <label for="dni">Documento</label>
+                    <input name="documento" type="text" id="dni" required>
+                    <br>
+                    <label for="email">Correo electrónico</label>
+                    <input name="correo" type="text" id="email" required>
+                    <br>
+                    <label for="programas">Programa al que aplica</label>
+                    <select name="programa" id="programas" required>
+                        <option value="">Seleccione opcion</option>
+                        <option value="manos-llenas">Manos llenas</option>
+                        <option value="panza-llena">Panza llena</option>
+                        <option value="ni-uno-menos">Ni uno menos</option>
+                    </select>
+                    <br>
+                    <label for="comentario">Comentario</label>
+                    <textarea name="comentarios" id="comentario"></textarea>
+                    <br>
+                    <button type="submit">inscribirse</button>
+                </form>
+            </p>
+        </section>
+    </main>
     <footer></footer>
 </body>
 </html>
