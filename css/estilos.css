@@ -1,7 +1,11 @@
 :root{
     --fondoOscuro: black;
-    --itemOscuro: #ee7631;
-    --hoverOscuro: rgba(250, 154, 98, 0.863);
+    --fondoSeccionOscuro1: rgb(65, 63, 63);
+    --fondoSeccionOscuro2: rgb(32, 24, 24);
+    --itemNavOscuro: #ee7631;
+    --itemFormOscuro: #ee7631;
+    --hoverNavOscuro: rgba(250, 154, 98, 0.863);
+    --hoverButtonOscuro: rgba(187, 187, 187, 0.774);
     --letraOscuro: white;
 }
 
@@ -13,7 +17,7 @@ body{
     background-color: var(--fondoOscuro);
 }
 
-nav ul{
+header nav ul{
     padding: 0;
     border: 0;
     margin: 0;
@@ -22,16 +26,20 @@ nav ul{
     min-width: 100%;
 }
 
-nav ul li{
+header nav ul li:hover{
+    background-color: var(--hoverNavOscuro);
+}
+
+header nav ul li{
     display: flex;
     flex-grow: 1;
     text-align: center;
     width: 200px;
     height: 60px;
-    background-color: var(--itemOscuro);
+    background-color: var(--itemNavOscuro);
 }
 
-nav ul li a{
+header nav ul li a{
     padding: 0;
     border: 0;
     display: flex;
@@ -43,6 +51,77 @@ nav ul li a{
     color: var(--letraOscuro);
 }
 
-nav ul li:hover{
-    background-color: var(--hoverOscuro);
+main section{
+    padding: 20px;
+    background-color: var(--fondoSeccionOscuro2);
+}
+
+main section h1{
+    text-align: center;
+}
+
+main section h2{
+    text-align: center;
+}
+
+main section a{
+    color: var(--itemNavOscuro);
+}
+
+main section figure{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+main section figure img{
+    max-width: 450px;
+    height: auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 450px;
+    background-color: var(--itemFormOscuro);
+}
+
+form label{
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+form input{
+    border-radius: 8px;
+    height: 40px;
+    width: 300px;
+}
+
+form select{
+    border-radius: 8px;
+    height: 40px;
+    width: 300px;
+}
+
+form textarea{
+    border-radius: 8px;
+    height: 40px;
+    width: 300px;
+}
+
+form button{
+    border-radius: 8px;
+    height: 40px;
+    width: 150px;
+    color: var(--letraOscuro);
+    background-color: var(--fondoOscuro);
+}
+
+form button:hover{
+    background-color: var(--hoverButtonOscuro);
 }
