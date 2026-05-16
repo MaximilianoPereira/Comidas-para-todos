@@ -6,7 +6,9 @@
     --itemFormOscuro: #ee7631;
     --hoverNavOscuro: rgba(250, 154, 98, 0.863);
     --hoverButtonOscuro: rgba(187, 187, 187, 0.774);
-    --letraOscuro: white;
+    --letraOscuro: white; 
+    --fuente-principal: "inter",sans serif  
+
 }
 
 body{
@@ -14,7 +16,10 @@ body{
     border: 0;
     margin: 0;
     color: var(--letraOscuro);
-    background-color: var(--fondoOscuro);
+    background-color: var(--fondoOscuro); 
+     font-family: var(--fuente-principal); 
+    font-size: 16px;  
+    max-width: 100%;
 }
 
 header nav ul{
@@ -50,6 +55,19 @@ header nav ul li a{
     text-decoration: none;
     color: var(--letraOscuro);
 }
+main{
+    
+width: 90%;
+
+
+} 
+/* PARRAFOS */
+p{
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+
 
 main section{
     padding: 20px;
@@ -124,4 +142,47 @@ form button{
 
 form button:hover{
     background-color: var(--hoverButtonOscuro);
+} 
+figure{
+    display: 2rem; 
+    grid-template-rows: repeat var(auto-fit,minmax(200px,1fr)); 
+    gap:15px; 
+    justify-items: center;
+
+
+
+}
+figure img{
+    width: 250px; 
+    height: 180px; 
+    object-fit: cover; 
+    border-radius: 5px;
+} 
+figcaption{
+    grid-row: 1/-1; 
+    text-align: center; 
+    font-style: italic; 
+    margin-bottom: 10px;
+
+
+}
+
+
+/* FOOTER */
+footer{
+    background-color: #2e8b57;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+footer a{
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover{
+    text-decoration: underline;
 }
