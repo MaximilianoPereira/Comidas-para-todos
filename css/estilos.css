@@ -4,24 +4,26 @@
     --fondoSeccionOscuro2: rgb(32, 24, 24);
     --itemNavOscuro: #ee7631;
     --itemFormOscuro: #ee7631;
+    --itemFooterOscuro: #ee7631;;
     --hoverNavOscuro: rgba(250, 154, 98, 0.863);
     --hoverButtonOscuro: rgba(187, 187, 187, 0.774);
     --letraOscuro: white; 
-    --fuente-principal: "inter",sans serif  
-
+    --fuente-principal: "inter",sans serif
 }
 
+/* BODY */
 body{
     padding: 0;
     border: 0;
     margin: 0;
     color: var(--letraOscuro);
     background-color: var(--fondoOscuro); 
-     font-family: var(--fuente-principal); 
+    font-family: var(--fuente-principal); 
     font-size: 16px;  
     max-width: 100%;
 }
 
+/* NAVBAR CONTENEDOR */
 header nav ul{
     padding: 0;
     border: 0;
@@ -31,10 +33,12 @@ header nav ul{
     min-width: 100%;
 }
 
+/* NAVBAR EFECTO */
 header nav ul li:hover{
     background-color: var(--hoverNavOscuro);
 }
 
+/* NAVBAR CONTENEDOR OPCIONES */
 header nav ul li{
     display: flex;
     flex-grow: 1;
@@ -44,6 +48,7 @@ header nav ul li{
     background-color: var(--itemNavOscuro);
 }
 
+/* NAVAR OPCIONES LINK */
 header nav ul li a{
     padding: 0;
     border: 0;
@@ -55,49 +60,52 @@ header nav ul li a{
     text-decoration: none;
     color: var(--letraOscuro);
 }
+
+/* MAIN */
 main{
-    
-width: 90%;
-
-
+    width: 90%;
+    margin: auto;
 } 
+
+/* TITULOS */
+h1, h2, h3{
+    text-align: center;
+}
+
 /* PARRAFOS */
 p{
     margin-bottom: 20px;
-    text-align: justify;
+    text-align: center;
 }
 
-
-
+/* SECCIONES EN MAIN */
 main section{
     padding: 20px;
     background-color: var(--fondoSeccionOscuro2);
 }
 
-main section h1{
-    text-align: center;
-}
-
-main section h2{
-    text-align: center;
-}
-
+/* VINCULOS EN MAIN */
 main section a{
     color: var(--itemNavOscuro);
 }
 
+/* CONTENEDOR IMAGENES MAIN */
 main section figure{
     margin: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     max-width: 100%;
+    gap: 15px;
 }
 
+/* IMAGENES MAIN */
 main section figure img{
     max-width: 450px;
     height: auto;
 }
 
+/* FORM */
 form{
     display: flex;
     flex-direction: column;
@@ -108,30 +116,35 @@ form{
     background-color: var(--itemFormOscuro);
 }
 
+/* FORM ETIQUETA */
 form label{
     padding: 10px;
     text-align: center;
     width: 300px;
 }
 
+/* FORM INPUTS */
 form input{
     border-radius: 8px;
     height: 40px;
     width: 300px;
 }
 
+/* FORM INPUTS */
 form select{
     border-radius: 8px;
     height: 40px;
     width: 300px;
 }
 
+/* FORM INPUT CAJA DE TEXTO */
 form textarea{
     border-radius: 8px;
     height: 40px;
     width: 300px;
 }
 
+/* FORM BOTONES */
 form button{
     border-radius: 8px;
     height: 40px;
@@ -140,49 +153,28 @@ form button{
     background-color: var(--fondoOscuro);
 }
 
+/* FORM BOTONES EFECTO */
 form button:hover{
     background-color: var(--hoverButtonOscuro);
-} 
-figure{
-    display: 2rem; 
-    grid-template-rows: repeat var(auto-fit,minmax(200px,1fr)); 
-    gap:15px; 
-    justify-items: center;
-
-
-
 }
-figure img{
-    width: 250px; 
-    height: 180px; 
-    object-fit: cover; 
-    border-radius: 5px;
-} 
-figcaption{
-    grid-row: 1/-1; 
-    text-align: center; 
-    font-style: italic; 
-    margin-bottom: 10px;
-
-
-}
-
 
 /* FOOTER */
 footer{
-    background-color: #2e8b57;
+    background-color: var(--itemFooterOscuro);
     color: white;
     text-align: center;
     padding: 25px;
     margin-top: 30px;
 }
 
+/* FOOTER HIPERVINCULO */
 footer a{
     color: #ffd700;
     text-decoration: none;
     font-weight: bold;
 }
 
+/* FOOTER HIPERVINCULO EFECTO */
 footer a:hover{
     text-decoration: underline;
 }
