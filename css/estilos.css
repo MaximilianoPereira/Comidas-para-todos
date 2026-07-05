@@ -7,7 +7,8 @@
     --itemFooterOscuro: #ee7631;;
     --hoverNavOscuro: rgba(250, 154, 98, 0.863);
     --hoverButtonOscuro: rgba(187, 187, 187, 0.774);
-    --letraOscuro: white; 
+    --letraOscuro: white;
+    --fondoOscuroBase: rgb(39, 38, 38);
     --fuente-principal: "inter",sans serif
 }
 
@@ -44,7 +45,7 @@ body{
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: rgb(39, 38, 38);
+    background-color: var(--fondoOscuroBase);
 }
 
 /* NAVBAR BRAND TEXT */
@@ -202,7 +203,7 @@ form button:hover{
 
 /* FOOTER */
 footer{
-    background-color: var(--itemFooterOscuro);
+    background-color: var(--fondoOscuroBase);
     color: white;
     text-align: center;
     padding: 25px;

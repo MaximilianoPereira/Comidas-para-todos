@@ -3,6 +3,29 @@
 // const btnModo = document.getElementById("btn-modo")
 // btnModo.addEventListener("click", () => { document.body.classList.toggle("modo-oscuro") })
 
+// Menu NavBar
+const navBar = document.getElementById("navegacion")
+navBar.innerHTML = `
+        <nav class="navbar navbar-expand-md st-navbar-main">
+            <div class="container-fluid st-navbar-container">
+                <div class="navbar-brand st-navbar-brand">
+                    <a class="st-navbar-brand-text">Comida para todos</a>
+                    <button class="navbar-toggler st-navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" id="btnHamb">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse st-navbar-collapse" id="navMenu">
+                    <ul class="navbar-nav st-navbar-nav">
+                        <li class="nav-item st-nav-item"><a class="nav-link st-nav-link" href="./index.html">Inicio</a></li>
+                        <li class="nav-item st-nav-item"><a class="nav-link st-nav-link" href="./programas.html">Programas</a></li>
+                        <li class="nav-item st-nav-item"><a class="nav-link st-nav-link" href="./nosotros.html">Nosotros</a></li>
+                        <li class="nav-item st-nav-item"><a class="nav-link st-nav-link" href="./contactos.html">Contactos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    `
+
 // Efecto hamburguesa
 const navMenu = document.getElementById("navMenu")
 const btnHamb = document.getElementById("btnHamb")
