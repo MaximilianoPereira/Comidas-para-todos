@@ -23,42 +23,84 @@ body{
     max-width: 100%;
 }
 
-/* NAVBAR CONTENEDOR */
-header nav ul{
+/* NAVBAR CONTENEDOR EXTERNO NAV */
+.st-navbar-main{
     padding: 0;
-    border: 0;
     margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    min-width: 100%;
 }
 
-/* NAVBAR EFECTO */
-header nav ul li:hover{
-    background-color: var(--hoverNavOscuro);
-}
-
-/* NAVBAR CONTENEDOR OPCIONES */
-header nav ul li{
-    display: flex;
-    flex-grow: 1;
-    text-align: center;
-    width: 200px;
-    height: 60px;
-    background-color: var(--itemNavOscuro);
-}
-
-/* NAVAR OPCIONES LINK */
-header nav ul li a{
+/* NAVBAR CONTENEDOR EXTERNO DIV */
+.st-navbar-container{
     padding: 0;
-    border: 0;
+    margin: 0;
+    height: 60px;
+}
+
+/* NAVBAR BRAND CONTENEDOR DIV */
+.st-navbar-brand{
+    margin: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
+    text-align: center;
+    background-color: rgb(39, 38, 38);
+}
+
+/* NAVBAR BRAND TEXT */
+.st-navbar-brand-text{
+    display: flex;
+    flex: 1;
+    justify-content: center;
     align-items: center;
-    width: 100%;
-    height: auto;
-    text-decoration: none;
     color: var(--letraOscuro);
+    text-decoration: none;
+}
+
+/* NAVBAR TEXTO DIV EFECTO */
+.st-navbar-brand-text:hover{
+    color: var(--itemFooterOscuro);
+}
+
+/* NAVBAR TOGLER BUTTON */
+.st-navbar-toggler{
+    background-color: var(--letraOscuro);
+}
+
+/* NAVBAR CONTENEDOR INTERNO DIV */
+.st-navbar-collapse{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    background-color: grey;
+}
+
+/* NAVBAR CONTENEDOR INTERNO UL */
+.st-navbar-nav{
+    height: 100%;
+    width: 100%;
+}
+
+/* NAVBAR CONTENEDOR OPCIONES LI */
+.st-nav-item{
+    flex: 1;
+}
+
+/* NAVBAR CONTENEDOR OPCIONES LINK A */
+.st-nav-link{
+    display: flex;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: var(--letraOscuro);
+    background-color: var(--itemNavOscuro);
+    font-weight: bold;
+}
+
+/* NAVBAR OPCIONES LINK A EFECTO */
+.st-nav-link:hover{
+    background-color: var(--hoverNavOscuro);
 }
 
 /* MAIN */
