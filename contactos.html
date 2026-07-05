@@ -3,64 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/estilos.css">
-    <title>ONG Contactos </title>
+    <title>Comidas para todos</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./programas.html">Programas</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./contactos.html">Contactos</a></li>
-            </ul>        
-        </nav>
-        <h2> Contactos </h2>
-        <p>Les dejamos nuestra red social en instagram para que puedan vernos  conocernos, asi mismo tambien les dejamos nuestro telefono celular  mail, para donaciones o postulaciones para sumarse al equipo para ayudar a los mas necesitados</p>
-        <ul>
-            <li>  <a href="tel:5491159919020"> Nuestro telefono para llamadas </a> </li>
-            <li>  <a href="mailto:comidasparatodo@gmail.com"> Enviar mail para consultas</a> </li>
-            <li>  <a href="https://www.instagram.com/" target="_blank" >Nuestro link para instagram </a> </li>
-            <li>  <a href="UniversidadNacionaldeHurlingham,Av.Gdor.Vergara2222,B1688VillaTesei,ProvinciadeBuenosAires" target="_blank" rel="noopener noreferrer"> Nuestra ubicacion </a></li>
-        </ul>
-        <br>
+    <header id="navegacion">
+
     </header>
     <main>
-        <br>
-        <h3> Para realizar donaciones </h3>
-        <p> Si quieres realizar donaciones te dejamos un pequeño formulario para que nos contactemos
+        <section class="st-main-section">
+            <h2> Contactos </h2>
+            <p>Les dejamos nuestra red social en instagram para que puedan vernos  conocernos, asi mismo tambien les dejamos nuestro telefono celular  mail, para donaciones o postulaciones para sumarse al equipo para ayudar a los mas necesitados</p>
+            <ul>
+                <li><a href="tel:5491159919020"> Nuestro telefono para llamadas </a> </li>
+                <li><a href="mailto:comidasparatodo@gmail.com"> Enviar mail para consultas</a> </li>
+                <li><a href="https://www.instagram.com/" target="_blank" >Nuestro link para instagram </a> </li>
+                <li><a href="UniversidadNacionaldeHurlingham,Av.Gdor.Vergara2222,B1688VillaTesei,ProvinciadeBuenosAires" target="_blank" rel="noopener noreferrer"> Nuestra ubicacion </a></li>
+            </ul>
+            <br>
+            <h3> Para realizar donaciones </h3>
+            <p> Si quieres realizar donaciones te dejamos un pequeño formulario para que nos contactemos
             <i> Todo lo que nos brinden para las donaciones se las agradeceremos de parte de todo el equipo y por ayudar a los que mas lo necesitan </i>
             </p>
-        <section>
-        <form>
-            <label  for="Nombre"> Nombre completo:</label>
-        <br>
-            <input id="DNI" type="text" name="DNI">
-        <br>
-            <label for="DNI"> DNI: </label>
-        <br>
-            <input id="Nombre" type="text" name="Nombre">
-        <br>
-            <label for="mail"> Mail: </label>
-        <br>
-            <input id="mail" type="text" name="mail">
-        <br>
-            <label for="telefono" >Telefono:</label>
-        <br>
-            <input id="telefono" type="text" name="telefono">
-        <br>
-        <br>
-            <input type= "submit" value= "Enviar">  
-        </form>
-    </section>
+        </section>
+        <section class="st-main-section">
+            <div class="d-flex justify-content-center align-items-center">
+                <form  id="form-inscripcion" action="/inscribir" method="post">
+                    <label for="nombre">Nombre</label>
+                    <input name="nombre" type="text" id="nombre">
+                    <br>
+                    <label for="apellido">Apellido</label>
+                    <input name="apellido" type="text" id="apellido">
+                    <br>
+                    <label for="dni">Documento</label>
+                    <input name="documento" type="text" id="dni" required>
+                    <br>
+                    <label for="email">Correo electrónico</label>
+                    <input name="correo" type="text" id="email" required>
+                    <br>
+                    <label for="programas">Programa al que aplica</label>
+                    <select name="programa" id="programas" required>
+                        <option value="">Seleccione opcion</option>
+                        <option value="manos-llenas">Manos llenas</option>
+                        <option value="panza-llena">Panza llena</option>
+                        <option value="ni-uno-menos">Ni uno menos</option>
+                    </select>
+                    <br>
+                    <label for="comentario">Comentario</label>
+                    <textarea name="comentarios" id="comentario"></textarea>
+                    <br>
+                    <button type="submit">inscribirse</button>
+                </form>
+            </div>
+        </section>
     </main>
     <footer> 
-        <h2> ¿Quieres ser parte de nuestro equipo? </h2>
-        <p> Si queres sumarte a esta nueva aventura encantadora y llena de solidaridad te dejamos nuestro canales de contacto </p>
-        <a href="Contacto"> 11-4355-6799 </a>
+        <h2> ¿Quieres ser parte de nuestro equipo?</h2>
+        <p> Si queres sumarte a esta nueva aventura encantadora y llena de solidaridad te dejamos nuestro canales de contacto</p>
+        <a class="st-main-section-a" href="Contacto">11-4355-6799</a>
         <br>
-        <a href="email">tuong@.com.ar</a>
+        <a class="st-main-section-a" href="email">tuong@.com.ar</a>
     </footer>
+    <script src="./js/main.js"></script>
 </body>
 </html>                                     

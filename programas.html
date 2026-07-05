@@ -5,26 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/estilos.css">
-    <title>ONG</title>
+    <title>Comidas para todos</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-md">
-            <div class="container-fluid">
-                <div class="navbar-brand">Comida para todos</div>
-                <div class="collapse navbar-collapse show">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./programas.html">Programas</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./contactos.html">Contactos</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <header id="navegacion">
+
     </header>
     <main>
-        <section id="sec-lista-programas">
+        <section class="st-main-section" id="sec-lista-programas">
             <h1>Nuestros programas</h1>
             <br>
             <p>
@@ -32,15 +20,15 @@
                 especialistas en diversas áreas para cumplir con nuestra misión. Entre ellos se listan:
             </p>
                 <ul>
-                    <li><a href="#programa-manos">Manos llenas</a></li>
-                    <li><a href="#programa-panza">Panza llena</a></li>
-                    <li><a href="#programa-num">Ni uno menos</a></li>
+                    <li><a class="st-main-section-a" href="#programa-manos">Manos llenas</a></li>
+                    <li><a class="st-main-section-a" href="#programa-panza">Panza llena</a></li>
+                    <li><a class="st-main-section-a" href="#programa-num">Ni uno menos</a></li>
                 </ul>
-                <h2><a href="#inscripcion">¡Forma parte de nuestra organización!</a></h2>
+                <h2><a class="st-main-section-a" href="#sec-inscripcion">¡Forma parte de nuestra organización!</a></h2>
         </section>
-        <section id="sec-programa-manos">
+        <section class="st-main-section" id="sec-programa-manos">
             <h2>Programa: Manos llenas</h2>
-            <figure><img src="./img/manos-llenas-stock.png" alt="programa-1"></figure>
+            <figure class="st-main-section-figure"><img class="st-main-section-figure-img" src="./img/manos-llenas-stock.png" alt="programa-1"></figure>
             <br>
             <p>
                 Este programa se encarga de la recepción de donaciones, clasificación, almacenamiento y aprovisionamiento. Para los mismos se capacita a la 
@@ -51,9 +39,9 @@
                 Trabajamos con los supermercados, verdulerías y restaurantes locales para generar sinergia y unidad con el sector privado.
             </p>
         </section>
-        <section id="sec-programa-panza">
+        <section class="st-main-section" id="sec-programa-panza">
             <h2>Programa: Panza llena</h2>
-            <figure><img src="./img/panza-llena-stock.png" alt="programa-2"></figure>
+            <figure class="st-main-section-figure"><img class="st-main-section-figure-img" src="./img/panza-llena-stock.png" alt="programa-2"></figure>
             <br>
             <p>
                 Este programa se encarga de la preparación de alimentos, armado de menús y aprovisionamiento a los comedores para que la gente que necesite
@@ -61,9 +49,9 @@
                 los ingredientes disponibles, asi no se desperdicie ninguna ayuda.
             </p>
         </section>
-        <section id="sec-programa-num">
+        <section class="st-main-section" id="sec-programa-num">
             <h2>Programa: Ni uno menos</h2>
-            <figure><img src="./img/ni-uno-menos-stock.png" alt="programa-3"></figure>
+            <figure class="st-main-section-figure"><img class="st-main-section-figure-img" src="./img/ni-uno-menos-stock.png" alt="programa-3"></figure>
             <br>
             <p>
                 Este programa se encarga de la distribución efectiva e implementación de los distintos programas para que puedan acceder a los mismos personas
@@ -73,7 +61,7 @@
                 Contamos con una red logística en constante expansión, transportistas experimentados y nuestro reconocimiento internacional es la prueba.
             </p>
         </section>
-        <section id="sec-inscripcion">
+        <section class="st-main-section" id="sec-inscripcion">
             <h2>¿Cómo participar?</h2>
             <br>
             <p>
@@ -84,9 +72,10 @@
                     <li>Esperar a que se contacten con usted y le confirmen la inscripcion al programa.</li>
                     <li>En <strong>función de que se requiera</strong> se contactaran con usted para pactar una entrevista personal, debe presentarse a la convocatoria.</li>
                 </ol>
+            <div class="d-flex justify-content-center align-items-center">
                 <form  id="form-inscripcion" action="/inscribir" method="post">
                     <label for="nombre">Nombre</label>
-                    <input name="nombre" type="text" id="nombre">
+                    <input name="nombre" type="text" id="nombre-inscripcion">
                     <br>
                     <label for="apellido">Apellido</label>
                     <input name="apellido" type="text" id="apellido">
@@ -109,15 +98,17 @@
                     <textarea name="comentarios" id="comentario"></textarea>
                     <br>
                     <button type="submit">inscribirse</button>
+                    <p id="msg-inscripcion" class="mt-3"></p>
                 </form>
+            </div>
         </section>
     </main>
     <footer> 
-        <h2> ¿Quieres ser parte de nuestro equipo? </h2>
-        <p> Si queres sumarte a esta nueva aventura encantadora y llena de solidaridad te dejamos nuestro canales de contacto </p>
-        <a href="Contacto"> 11-4355-6799 </a>
+        <h2> ¿Quieres ser parte de nuestro equipo?</h2>
+        <p> Si queres sumarte a esta nueva aventura encantadora y llena de solidaridad te dejamos nuestro canales de contacto</p>
+        <a class="st-main-section-a" href="Contacto">11-4355-6799</a>
         <br>
-        <a href="email">tuong@.com.ar</a>
+        <a class="st-main-section-a" href="email">tuong@.com.ar</a>
     </footer>
 
     <script src="./js/main.js"></script>
