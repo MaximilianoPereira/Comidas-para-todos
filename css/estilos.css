@@ -97,6 +97,7 @@ body{
     color: var(--letraOscuro);
     background-color: var(--itemNavOscuro);
     font-weight: bold;
+    transition: all .2s
 }
 
 /* NAVBAR OPCIONES LINK A EFECTO */
@@ -111,25 +112,46 @@ main{
 } 
 
 /* TITULOS */
-h1, h2, h3{
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+h2, h3{
     text-align: center;
 }
 
 /* PARRAFOS */
 p{
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 20px;
     text-align: center;
+    font-size: 1.2rem;
 }
 
 /* SECCIONES EN MAIN */
 .st-main-section{
-    padding: 20px;
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 16px;
     background-color: var(--fondoSeccionOscuro2);
+}
+
+/* CONTENEDOR VINCULOS PROGRAMAS EN MAIN */
+.st-item-prog{
+    text-decoration: none;
 }
 
 /* VINCULOS EN MAIN */
 .st-main-section-a{
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    border:2px solid var(--itemNavOscuro);
     color: var(--itemNavOscuro);
+    text-decoration: none;
 }
 
 /* CONTENEDOR IMAGENES MAIN */
@@ -144,8 +166,18 @@ p{
 
 /* IMAGENES MAIN */
 .st-main-section-figure-img{
-    max-width: 450px;
+    width: 100%;
+    border-radius: 10px;
     height: auto;
+}
+
+/* TEXTO SECCIONES */
+.st-main-section-h2{
+    text-align: left;
+}
+
+.st-main-section-p{
+    text-align: left;
 }
 
 /* FORM */
