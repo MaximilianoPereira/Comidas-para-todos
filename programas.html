@@ -65,50 +65,54 @@
                     Este programa se encarga de la distribución efectiva e implementación de los distintos programas para que puedan acceder a los mismos personas
                     con discapacidades motrices o que vivan en zonas de dificil acceso. 
                 </p>
-                <p>
+                <p class="st-main-section-p">
                     Contamos con una red logística en constante expansión, transportistas experimentados y nuestro reconocimiento internacional es la prueba.
                 </p>
             </div>
         </section>
-        <section class="st-main-section" id="sec-inscripcion">
-            <h2>¿Cómo participar?</h2>
-            <br>
-            <p>
-                Para participar se deben seguir los siguientes pasos:
-            </p>
-                <ol>
-                    <li>Completar el formulario que esta debajo con los datos requeridos.</li>
-                    <li>Esperar a que se contacten con usted y le confirmen la inscripcion al programa.</li>
-                    <li>En <strong>función de que se requiera</strong> se contactaran con usted para pactar una entrevista personal, debe presentarse a la convocatoria.</li>
-                </ol>
-            <div class="d-flex justify-content-center align-items-center">
-                <form  id="form-inscripcion" action="/inscribir" method="post">
-                    <label for="nombre">Nombre</label>
-                    <input name="nombre" type="text" id="nombre-inscripcion">
-                    <br>
-                    <label for="apellido">Apellido</label>
-                    <input name="apellido" type="text" id="apellido">
-                    <br>
-                    <label for="dni">Documento</label>
-                    <input name="documento" type="text" id="dni" required>
-                    <br>
-                    <label for="email">Correo electrónico</label>
-                    <input name="correo" type="text" id="email" required>
-                    <br>
-                    <label for="programas">Programa al que aplica</label>
-                    <select name="programa" id="programas" required>
-                        <option value="">Seleccione opcion</option>
-                        <option value="manos-llenas">Manos llenas</option>
-                        <option value="panza-llena">Panza llena</option>
-                        <option value="ni-uno-menos">Ni uno menos</option>
-                    </select>
-                    <br>
-                    <label for="comentario">Comentario</label>
-                    <textarea name="comentarios" id="comentario"></textarea>
-                    <br>
-                    <button type="submit">inscribirse</button>
-                    <p id="msg-inscripcion" class="mt-3"></p>
-                </form>
+        <section class="row align-items-start st-main-section" id="sec-inscripcion">
+            <div class="col-md-5">
+                <h2 class="st-main-section-h2">¿Cómo participar?</h2>
+                <br>
+                <p class="st-main-section-p">
+                    Para participar se deben seguir los siguientes pasos:
+                    <ol>
+                        <li>Completar el formulario que esta debajo con los datos requeridos.</li>
+                        <li>Esperar a que se contacten con usted y le confirmen la inscripcion al programa.</li>
+                        <li>En <strong>función de que se requiera</strong> se contactaran con usted para pactar una entrevista personal, debe presentarse a la convocatoria.</li>
+                    </ol>
+                </p>
+            </div>
+            <div class="col-md-7">
+                <div class="d-flex justify-content-center align-items-center">
+                    <form  id="form-inscripcion" action="/inscribir" method="post">
+                        <label for="nombre">Nombre</label>
+                        <input name="nombre" type="text" id="nombre-inscripcion">
+                        <br>
+                        <label for="apellido">Apellido</label>
+                        <input name="apellido" type="text" id="apellido">
+                        <br>
+                        <label for="dni">Documento</label>
+                        <input name="documento" type="text" id="dni" required>
+                        <br>
+                        <label for="email">Correo electrónico</label>
+                        <input name="correo" type="text" id="email" required>
+                        <br>
+                        <label for="programas">Programa al que aplica</label>
+                        <select name="programa" id="programas" required>
+                            <option value="">Seleccione opcion</option>
+                            <option value="manos-llenas">Manos llenas</option>
+                            <option value="panza-llena">Panza llena</option>
+                            <option value="ni-uno-menos">Ni uno menos</option>
+                        </select>
+                        <br>
+                        <label for="comentario">Comentario</label>
+                        <textarea name="comentarios" id="comentario"></textarea>
+                        <br>
+                        <button type="submit">inscribirse</button>
+                        <p id="msg-inscripcion" class="mt-3"></p>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
