@@ -243,10 +243,15 @@ footer{
 }
 
 /* FOOTER HIPERVINCULO */
-footer a{
-    color: #ffd700;
+.st-footer-a{
+    display: inline-block;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    border:2px solid var(--itemNavOscuro);
+    color: var(--itemNavOscuro);
     text-decoration: none;
-    font-weight: bold;
 }
 
 /* FOOTER HIPERVINCULO EFECTO */
